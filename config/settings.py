@@ -219,7 +219,7 @@ if not DEBUG:
     SESSION_COOKIE_DOMAIN = ".kctour.net"
     CSRF_COOKIE_DOMAIN = ".kctour.net"
     sentry_sdk.init(
-        dsn="https://5344b5a4537c4c7bb8a18457d9905e05@o285966.ingest.sentry.io/4503890242961408",
+        dsn="https://e96afd7a75fe45fd8895d953598b7b54@o4504155196227584.ingest.sentry.io/4504155198521344",
         integrations=[
             DjangoIntegration(),
         ],
