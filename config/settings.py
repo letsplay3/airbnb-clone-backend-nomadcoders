@@ -204,7 +204,7 @@ if DEBUG:
     CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:3000"]
 
 else:
-    CORS_ALLOWED_ORIGINS = ["https;//taiwantour.site"]
+    CORS_ALLOWED_ORIGINS = ["https://taiwantour.site"]
     CSRF_TRUSTED_ORIGINS = ["https://taiwantour.site"]
 
 CORS_ALLOW_CREDENTIALS = True
