@@ -204,9 +204,9 @@ if DEBUG:
     CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:3000"]
 
 else:
-    CORS_ALLOWED_ORIGINS = ["https://airbnbclonetest.xyz"]
+    CORS_ALLOWED_ORIGINS = ["https://kctour.net"]
 
-    CSRF_TRUSTED_ORIGINS = ["https://airbnbclonetest.xyz"]
+    CSRF_TRUSTED_ORIGINS = ["https://kctour.net"]
 
 CORS_ALLOW_CREDENTIALS = True
 GH_SECRET = env("GH_SECRET")
@@ -216,8 +216,8 @@ CF_TOKEN = env("CF_TOKEN")
 
 
 if not DEBUG:
-    SESSION_COOKIE_DOMAIN = ".airbnbclonetest.xyz"
-    CSRF_COOKIE_DOMAIN = ".airbnbclonetest.xyz"
+    SESSION_COOKIE_DOMAIN = ".kctour.net"
+    CSRF_COOKIE_DOMAIN = ".kctour.net"
     sentry_sdk.init(
         dsn="https://5344b5a4537c4c7bb8a18457d9905e05@o285966.ingest.sentry.io/4503890242961408",
         integrations=[
