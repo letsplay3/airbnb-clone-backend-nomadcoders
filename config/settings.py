@@ -204,9 +204,8 @@ if DEBUG:
     CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:3000"]
 
 else:
-    CORS_ALLOWED_ORIGINS = ["https://kctour.net"]
-
-    CSRF_TRUSTED_ORIGINS = ["https://kctour.net"]
+    CORS_ALLOWED_ORIGINS = ["https;//taiwantour.site"]
+    CSRF_TRUSTED_ORIGINS = ["https://taiwantour.site"]
 
 CORS_ALLOW_CREDENTIALS = True
 GH_SECRET = env("GH_SECRET")
@@ -216,8 +215,8 @@ CF_TOKEN = env("CF_TOKEN")
 
 
 if not DEBUG:
-    SESSION_COOKIE_DOMAIN = ".kctour.net"
-    CSRF_COOKIE_DOMAIN = ".kctour.net"
+    SESSION_COOKIE_DOMAIN = ".taiwantour.site"
+    CSRF_COOKIE_DOMAIN = ".taiwantour.site"
     sentry_sdk.init(
         dsn="https://e96afd7a75fe45fd8895d953598b7b54@o4504155196227584.ingest.sentry.io/4504155198521344",
         integrations=[
